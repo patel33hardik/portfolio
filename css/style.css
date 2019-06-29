@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: DINLight;
+  src: url('../fonts/DINPro-Light.ttf') format('truetype');
+  font-size: 13pt
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -12,12 +18,12 @@
 *
 * ======================================================= */
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: DINLight, 'Times New Roman', Times, serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
   color: #7f7f7f;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.4);
   background: #fff;
   height: 100%;
   position: relative;
@@ -49,7 +55,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: DINLight, 'Times New Roman', Times, serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -204,8 +210,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .fh5co-tab-wrap .fh5co-tab-content {
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
   position: absolute;
   top: 0;
   opacity: 0;
