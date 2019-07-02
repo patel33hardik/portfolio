@@ -25,6 +25,11 @@
   background-size: cover;
 }
 
+.edu {
+  line-height:20px;
+  font-size:18px;
+}
+
 /* ===============================
 default css
 ==================================*/
@@ -370,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .fh5co-feature .fh5co-text h2 {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-weight: bold;
   text-transform: uppercase;
