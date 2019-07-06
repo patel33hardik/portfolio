@@ -49,11 +49,36 @@
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
 			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" id="profile_tab" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
-				<li><a href="#" id="edu_tab" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-				<li><a href="#" id="exp_tab" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
-				<li><a href="#" id="skill_tab" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
-				<li class="d-none"><a href="#" id="jacques_detail_tab" data-tab="5"><span class="icon icon-black-tie"></span><span class="menu-text"></span></a></li>
+				<li class="active">
+					<a href="#" id="profile_tab" data-tab="1">
+						<span class="icon icon-glass"></span><span class="menu-text">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="edu_tab" data-tab="2">
+						<span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="exp_tab" data-tab="3">
+						<span class="icon icon-black-tie"></span><span class="menu-text">Experience</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="skill_tab" data-tab="4" data-pie="yes">
+						<span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="jacques_detail_tab" data-tab="5">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="jbs_detail_tab" data-tab="6">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
 			</ul>
 			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -174,24 +199,9 @@
 								<div class="fh5co-text">
 									<h2>Jan 2018 - Oct 2018</h2>
 									<h3><a href="http://www.jbssa.com.au/" target="_blank">JBS Australia</a></h3>
-									<p class="edu">
-										Duties:<br/>
-										Designing and maintaining Web applications;
-										Providing technical support for the MySQL
-										<div id="content_jbs" style="display:none; font-size:15px;">
-											database and GTFS application. Maintain repository on the gerrit for all existing projects
-											and upgrade existing PHP web project into python environment with fully mobile
-											responsive feature.
-											Achievements:
-											<ul>
-												<li>I have learned a new programming language python and project management tool gerrit.</li>
-												<li>I have learned GTFS (General Transit Feed Specification) structure, which
-													is a common format for public transportation schedules and associated geographic information.</li>
-												<li>Learned hardware and software integrations.</li>
-												<li>Improved my knowledge of jQuery, CSS3, Bootstrap and gain more expertise in advanced technologies.</li>
-											</ul>
-										</div>
-										<small id="readmore_jbs" onclick="togglePanel('jbs')" style="color: #17e7a4;">read more...</small>
+									<p onclick="changeTab('jbs_detail_tab');" style="cursor: pointer;" class="edu">
+										Duties and Achievements
+										<span style="color: #17e7a4;">read more...</span>
 									</p>
 								</div>
 							</div>
@@ -291,6 +301,39 @@
 												hardware and software integrations.</li>
 											<li>Improved my knowledge of jQuery, CSS3, Bootstrap and gain more expertise
 												in advanced technologies.</li>
+										</ul>
+										<span onclick="changeTab('exp_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="6">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>Jan 2018 - Oct 2018</h2>
+									<h3><a href="http://www.jbssa.com.au/" target="_blank">JBS Australia</a></h3>
+									<div class="edu">
+										<h3>DUTIES:</h3>
+										<ul>
+											<li> My duties were picking products using a forklift for labourer
+												and scanning products in a database system. Handling product data
+												and enter product entry using scanning devices in the database.</li>
+										</ul><br/>
+										<h3 class="mt-1">ACHIEVEMENTS:</h3>
+										<ul>
+											<li>My duties were picking products using a forklift for labourer and scanning
+												products in a database system. Handling product data and enter product
+												entry using scanning devices in the database.</li>
 										</ul>
 										<span onclick="changeTab('exp_tab');" style="color: #17e7a4; cursor: pointer;">
 											Back..</span>
