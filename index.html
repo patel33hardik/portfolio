@@ -28,7 +28,6 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -47,16 +46,16 @@
 
 	</head>
 	<body style="background-image: url(images/bg_img.jpg);">
-	
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
 			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
+				<li class="active"><a href="#" id="profile_tab" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
+				<li><a href="#" id="edu_tab" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
+				<li><a href="#" id="exp_tab" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
+				<li><a href="#" id="skill_tab" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
+				<li class="d-none"><a href="#" id="jacques_detail_tab" data-tab="5"><span class="icon icon-black-tie"></span><span class="menu-text"></span></a></li>
 			</ul>
-			<div class="fh5co-tab-content active bg-img" data-content="1">
+			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
 					<div class="row row-bottom-padded-sm">
 						<div class="col-md-12">
@@ -70,8 +69,13 @@
 								I specialize in thinking outside the box to find unique solutions to difficult software issues
 								and troubleshooting for asp.net and database application using remote control tools. I look forward
 								to a stimulating position in a supportive team where I can add value and continue my
-								professional development. <a href="doc/HardikResume.docx"> click here </a> to download my resume 
+								professional development.
 							</p>
+							<div class="row">
+								<div class="col-md-12">
+									<a href="doc/HardikResume.docx" class="btn btn-resume"> Download Resume </a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -98,16 +102,15 @@
 						<div class="col-md-12">
 
 							<p>I have the privilege to study in these cool academic institutes.</p>
-							
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>Jun 2008 - May 2013</h2>
+									<h2>Feb 2018 - Jan 2019</h2>
 									<p class="edu">
-										B.E. (Computer Engineering) <br/>
-											<small>SankalChand Patel College of Engineering, Gujarat, India</small>
+										Professional Year Program <br/>
+										Navitas, Brisbane, QLD Australia.
 									</p>
 								</div>
 							</div>
@@ -120,7 +123,7 @@
 									<h2>Feb 2016 - Nov 2017</h2>
 									<p class="edu">
 										MISP (Master of Information System Program) <br/>
-											<small>University of Southern Queensland, Toowoomba QLD Australia.</small>
+										University of Southern Queensland, Toowoomba QLD Australia.
 									</p>
 								</div>
 							</div>
@@ -130,16 +133,15 @@
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>Feb 2018 - Jan 2019</h2>
+									<h2>Jun 2008 - May 2013</h2>
 									<p class="edu">
-										Professional Year Program <br/>
-											<small>Navitas, Brisbane, QLD Australia.</small>
+										B.E. (Computer Engineering) <br/>
+										SankalChand Patel College of Engineering, Gujarat, India
 									</p>
 								</div>
 							</div>
 
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -150,7 +152,6 @@
 
 							<p>I have the privilege to work with these cool companies.</p>
 
-
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-black-tie"></i>
@@ -158,24 +159,10 @@
 								<div class="fh5co-text">
 									<h2>Oct 2018 - Present</h2>
 									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
-									<p class="edu">
-									    Duties:<br/>
-										Designing and maintaining Web applications; 
-										Providing technical support for the MySQL
-										<div id="content_jax" style="display:none; font-size:15px;">										 
-											database and GTFS application. Maintain repository on the gerrit for all existing projects
-											and upgrade existing PHP web project into python environment with fully mobile
-											responsive feature.
-											Achievements:
-											<ul>
-												<li>I have learned a new programming language python and project management tool gerrit.</li>
-												<li>I have learned GTFS (General Transit Feed Specification) structure, which
-													is a common format for public transportation schedules and associated geographic information.</li>
-												<li>Learned hardware and software integrations.</li>
-												<li>Improved my knowledge of jQuery, CSS3, Bootstrap and gain more expertise in advanced technologies.</li>
-											</ul>
-										</div>
-										<small id="readmore_jax" onclick="togglePanel('jax')" style="color: #17e7a4;">read more...</small>
+									<p onclick="changeTab('jacques_detail_tab');" style="cursor: pointer;" class="edu">
+										Duties and Achievements
+										<span style="color: #17e7a4;">
+											read more...</span>
 									</p>
 								</div>
 							</div>
@@ -188,10 +175,10 @@
 									<h2>Jan 2018 - Oct 2018</h2>
 									<h3><a href="http://www.jbssa.com.au/" target="_blank">JBS Australia</a></h3>
 									<p class="edu">
-									    Duties:<br/>
-										Designing and maintaining Web applications; 
+										Duties:<br/>
+										Designing and maintaining Web applications;
 										Providing technical support for the MySQL
-										<div id="content_jbs" style="display:none; font-size:15px;">										 
+										<div id="content_jbs" style="display:none; font-size:15px;">
 											database and GTFS application. Maintain repository on the gerrit for all existing projects
 											and upgrade existing PHP web project into python environment with fully mobile
 											responsive feature.
@@ -217,10 +204,10 @@
 									<h2>Jun 2013 - May 2015</h2>
 									<h3><a href="http://www.everestinstruments.in/" target="_blank">Everest Instruments Pvt. Ltd.</a></h3>
 									<p class="edu">
-									    Duties:<br/>
-										Designing and maintaining Web applications; 
+										Duties:<br/>
+										Designing and maintaining Web applications;
 										Providing technical support for the MySQL
-										<div id="content_eve" style="display:none; font-size:15px;">										 
+										<div id="content_eve" style="display:none; font-size:15px;">
 											database and GTFS application. Maintain repository on the gerrit for all existing projects
 											and upgrade existing PHP web project into python environment with fully mobile
 											responsive feature.
@@ -239,7 +226,6 @@
 							</div>
 
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -254,22 +240,64 @@
 							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+							<div class="chart" data-percent="95"><span><strong>CSS3</strong>95%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
+							<div class="chart" data-percent="95"><span><strong>jQuery</strong>95%</span></div>
 						</div>
 
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
+							<div class="chart" data-percent="85"><span><strong>Python</strong>85%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+							<div class="chart" data-percent="80"><span><strong>MySQL</strong>80%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
+							<div class="chart" data-percent="50"><span><strong>AngularJS</strong>50%</span></div>
 						</div>
 
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="5">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>Oct 2018 - Present</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h2>Duties:</h2>
+										<ul>
+											<li> Developing web-based application, maintaining and testing.</li>
+											<li> Providing technical support and suggestions for development.</li>
+											<li> Maintain repository on the Gerrit for the projects.</li>
+											<li> Reporting issue to the manager in existing applications</li>
+										</ul><br/>
+										<h2 class="mt-1">Achievements:</h2>
+										<ul>
+											<li>I have learned a python programming language and Gerrit,
+												which is a web-based team code collaboration tool.</li>
+											<li>I have learned GTFS (General Transit Feed Specification) structure,
+												which is a standard format for public transportation schedules and
+												associated geographic information. GTFS commonly use in applications such as
+												google map and transit for navigations routs of buses and trains.
+											</li>
+											<li>I have learned Redmine project management and issue tracking tool,
+												hardware and software integrations.</li>
+											<li>Improved my knowledge of jQuery, CSS3, Bootstrap and gain more expertise
+												in advanced technologies.</li>
+										</ul>
+										<span onclick="changeTab('exp_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -285,7 +313,7 @@
 			</div>
 		</footer>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -309,12 +337,20 @@
 				largeur:10,
 				hauteur:10
 			});
+			$('#jacques_detail_tab').click();
 		});
 
 		function togglePanel(name) {
 			$('#content_'+name).toggle('slow');
-			 var text = ($('#readmore_'+name).text() == 'read more...' ? 'read less...' : 'read more...');
-			 $('#readmore_'+name).text(text);
+			var text = ($('#readmore_'+name).text() == 'read more...' ? 'read less...' : 'read more...');
+			$('#readmore_'+name).text(text);
+		}
+
+		function changeTab(id) {
+			/* var tab_name = $('.fh5co-tab-content').attr('data-content');
+			$('.fh5co-tab-content').removeClass('active');
+			$('#'+ id).addClass('bg-img animated fadeInUp active'); */
+			$('#'+ id).click();
 		}
 
 	</script>
