@@ -25,7 +25,7 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="hb.ico">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	<!-- Animate.css -->
@@ -76,6 +76,11 @@
 				</li>
 				<li class="d-none">
 					<a href="#" id="jbs_detail_tab" data-tab="6">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="eve_detail_tab" data-tab="7">
 						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
@@ -213,24 +218,9 @@
 								<div class="fh5co-text">
 									<h2>Jun 2013 - May 2015</h2>
 									<h3><a href="http://www.everestinstruments.in/" target="_blank">Everest Instruments Pvt. Ltd.</a></h3>
-									<p class="edu">
-										Duties:<br/>
-										Designing and maintaining Web applications;
-										Providing technical support for the MySQL
-										<div id="content_eve" style="display:none; font-size:15px;">
-											database and GTFS application. Maintain repository on the gerrit for all existing projects
-											and upgrade existing PHP web project into python environment with fully mobile
-											responsive feature.
-											Achievements:
-											<ul>
-												<li>I have learned a new programming language python and project management tool gerrit.</li>
-												<li>I have learned GTFS (General Transit Feed Specification) structure, which
-													is a common format for public transportation schedules and associated geographic information.</li>
-												<li>Learned hardware and software integrations.</li>
-												<li>Improved my knowledge of jQuery, CSS3, Bootstrap and gain more expertise in advanced technologies.</li>
-											</ul>
-										</div>
-										<small id="readmore_eve" onclick="togglePanel('eve')" style="color: #17e7a4;">read more...</small>
+									<p onclick="changeTab('eve_detail_tab');" style="cursor: pointer;" class="edu">
+										Duties and Achievements
+										<span style="color: #17e7a4;">read more...</span>
 									</p>
 								</div>
 							</div>
@@ -243,8 +233,7 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
+							<h2>Technical Skills:</h2>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
@@ -279,6 +268,7 @@
 								</div>
 								<div class="fh5co-text detail">
 									<h2>Oct 2018 - Present</h2>
+									Software and Web Developer
 									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
 									<div class="edu">
 										<h2>Duties:</h2>
@@ -321,6 +311,7 @@
 								</div>
 								<div class="fh5co-text detail">
 									<h2>Jan 2018 - Oct 2018</h2>
+									High Reach Forklift Driver 
 									<h3><a href="http://www.jbssa.com.au/" target="_blank">JBS Australia</a></h3>
 									<div class="edu">
 										<h3>DUTIES:</h3>
@@ -334,6 +325,43 @@
 											<li>My duties were picking products using a forklift for labourer and scanning
 												products in a database system. Handling product data and enter product
 												entry using scanning devices in the database.</li>
+										</ul>
+										<span onclick="changeTab('exp_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="7">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>Jun 2013 - May 2015</h2>
+									Software and Web Developer
+									<h3><a href="http://www.everestinstruments.in/" target="_blank">Everest Instruments Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>DUTIES:</h3>
+										<ul>
+											<li> Designing and maintaining Windows and Web applications.</li>
+											<li> Providing technical support for SQL database and windows applications.</li>
+											<li> Working closely with customers regarding maintenance of diverse software systems.</li>
+											<li> Performing software exe updates to keep client's computer system up to date</li>
+										</ul><br/>
+										<h3 class="mt-1">ACHIEVEMENTS:</h3>
+										<ul>
+											<li> I have experienced MSSQL, ASP.NET, and .NET technologies.</li>
+											<li> I learned advanced features of Web and Windows applications.
+												Includes: HTML, jQuery, Ajax, WebForms, CSS, VB.NET </li>
+											<li> Working closely with customers regarding maintenance of diverse software systems.</li>
+											<li> I have experienced software support using various remote desktop tools.</li>
 										</ul>
 										<span onclick="changeTab('exp_tab');" style="color: #17e7a4; cursor: pointer;">
 											Back..</span>
@@ -380,7 +408,6 @@
 				largeur:10,
 				hauteur:10
 			});
-			$('#jacques_detail_tab').click();
 		});
 
 		function togglePanel(name) {
