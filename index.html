@@ -36,6 +36,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- timeline style  -->
 	<link rel="stylesheet" href="css/timeline.css">
+	<!-- lightbox style  -->
+	<link rel="stylesheet" href="css/lightbox.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -87,8 +89,18 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" id="project_detail_tab" data-tab="8">
-						<span class="icon icon-black-tie"></span><span class="menu-text">Projects</span>
+					<a href="#" id="project_tab" data-tab="8">
+						<span class="icon icon-tasks"></span><span class="menu-text">Projects</span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="edairy_detail_tab" data-tab="9">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="jax_detail_tab" data-tab="10">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
 			</ul>
@@ -388,28 +400,152 @@
 								<section class="timeline">
 									<div class="container p-0">
 										<div class="timeline-item">
-											<div class="timeline-img"></div>
-											<div class="timeline-content js--fadeInLeft">
-												<h2>Title</h2>
-												<div class="date">1 MAY 2016</div>
-												<p>text gose hre.</p>
-												<a class="bnt-more" href="javascript:void(0)">More</a>
+											<div class="timeline-img">
+											</div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header timeline-img-jax" onclick="openImages('jax_img');">
+													<h2>JAS & GTFS</h2>
+												</div>
+												<div class="date">2018-2019</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_detail_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Web application configured with linux
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
 											</div>
 										</div>
-
+										<div class="timeline-item">
+											<div class="timeline-img">
+											</div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header" onclick="openImages('edairy_img');">
+													<h2>eDairy milk</h2>
+												</div>
+												<div class="date">2013-2015</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('edairy_detail_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Windows and Web Application (Dairy Inventory)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
 										<div class="timeline-item">
 											<div class="timeline-img"></div>
-											<div class="timeline-content timeline-card js--fadeInRight">
-												<div class="timeline-img-header">
-													<h2>Card Title</h2>
-												</div>
-												<div class="date">25 MAY 2016</div>
-												<p>text gose hre.</p>
-												<a class="bnt-more" href="javascript:void(0)">More</a>
+											<div class="img-web timeline-content js--fadeInLeft"
+													onclick="openImages('spce_web_img')">
+												<h5 class="mt-2 mb-1">SPCE event websites</h5>
+												<div class="date">2012-2013</div>
+												<p class="p-1 m-0" style="font-size: 14px">
+												</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
+											<div class="img-crt timeline-content js--fadeInLeft" onclick="openImages('crt_img')">
+												<h4 class="mb-1">Certificate Design</h4>
+												<div class="date">2013</div>
+												<p class="p-1 m-0" style="font-size: 14px">Designed certificate of a national workshop
+													for the electrical department which was held at SPCE college,
+													Gujarat, India.<br/> Tool: Photoshop</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
+											<div class="img-utility timeline-content js--fadeInLeft" onclick="openImages('utility_img')">
+												<h5 class="mb-1">Special utilities design</h5>
+												<div class="date">2014-2017</div>
+												<p class="p-1 m-0" style="font-size: 14px">
+													click here to open small utilities for replace softwares and
+													event registration forms in WPF.
+												</p>
 											</div>
 										</div>
 									</div>
 								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="9">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2013-2015</h2>
+									<h3><a href="http://www.everestinstruments.in/" target="_blank">Everest Instruments Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>eDairy milk</h3>
+										<ul>
+											<li>An automation system for milk collection on dairy</li>
+											<li>Designed for dairy automation to a collection of the farmer’s
+												data with the dairy product quantity.</li>
+											<li>A web portal to access the milk collection reports
+												from a central database system using C# language in MVC architecture,
+												Ajax, Bootstrap framework, jQuery and CSS.</li>
+											<li>Technology: ASP.net, C#, Data table, SQL, Ajax, HTML, CSS, jQuery.</li>
+										</ul>
+										<h3>Hygi+ (Web ERP)</h3>
+										<ul>
+											<li>Designed pharmacy management system to streamline the functioning
+												of wholesaler medical stores.</li>
+											<li>The web portal also provides expiry handling, selling records,
+												client records, handling stock and transactions.</li>
+											<li>Technology: C#, MVC4 Entity Framework 5.0.0, jQuery,
+												CSS, Ajax features and MySQL</li>
+										</ul>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="10">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2018-2019</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>4Trak NSW train (GTFS train schedule system)</h3>
+										<ul>
+											<li>To know about The General Transit Feed Specification (GTFS) please
+												<a href="https://opendata.transport.nsw.gov.au/documentation" target="_blank">
+													Click here..</a>
+											</li>
+											<li>Display schedule for NSW regional trains in the Jacques devices.</li>
+											<li>Works with GTFS data structure and NSW open data API.</li>
+											<li>A web service configures with help point devices which have developed
+												using Python programing language, Ajax, CSS, jQuery and flask framework.</li>
+											<li>Technology: Python Flask, Pandas DataFrame, GTFS, Google Map and text to audio API services,
+												Ajax, HTML, CSS, jQuery.</li>
+										</ul>
+										<h3>JAS (Jacques Announcement Scheduler)</h3>
+										<ul>
+											<li>Jacques Announcement Scheduler (JAS) is a public address and bell scheduling interface that runs on a Jacques system controller. The JAS web interface allows for the uploading of audio files (tones, bells and pre-recorded announcements) for use and broadcast throughout the Jacques IP Communications System. Schedules allow the user to build a timetable for the broadcast of audio files at allocated times across all or selected zones.</li>
+											<li>JAS has developed in Python programming language with flask framework.</li>
+											<li>Testing under Jacques v8 custom Linux OS.</li>
+											<li>It's a fully mobile responsive web interface which has designed with jQuery, Ajax, Bootstrap and CSS3.</li>
+											<li>Technology: Python Flask, Linux server, PyAudioSelector, HTML5, CSS3, Ajax and MySQL</li>
+										</ul>
+										<p class="mb-2"> <small> Note: Due to privacy reason, project snapshots are not disclosed. All images are source from internet which shows similar work.</small>
+										</p>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -428,6 +564,47 @@
 		</footer>
 	</div>
 
+	<div class="edairy-gallery d-none">
+		<a id='edairy_img' href="images/edairy/2.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/3.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/4.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/5.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/6.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/7.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/8.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/9.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/10.JPG" data-lightbox="edairy-gallery"></a>
+		<a href="images/edairy/11.JPG" data-lightbox="edairy-gallery"></a>
+	</div>
+	<div class="crt-gallery d-none">
+		<a id='crt_img' href="doc/crt.jpg" data-lightbox="crt-gallery"></a>
+	</div>
+	<div class="web-gallery d-none">
+		<a id='spce_web_img' href="doc/web2012.jpg" data-lightbox="web-gallery"></a>
+		<a id='spce_web_img' href="doc/web2013.jpg" data-lightbox="web-gallery"></a>
+	</div>
+	<div class="utility-gallery d-none">
+		<a id='utility_img' href="images/utility/2.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/3.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/4.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/5.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/6.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/7.JPG" data-lightbox="utility-gallery"></a>
+		<a href="images/utility/8.JPG" data-lightbox="utility-gallery"></a>
+	</div>
+	<div class="jax-gallery d-none">
+		<a id='jax_img' href="images/jax/2.jpg" data-lightbox="jax-gallery"
+		data-title="Source: <a href='https://blinktag.com/tag/transit/' target='_blank'>click hear</a>"></a>
+		<a href="images/jax/3.png" data-lightbox="jax-gallery"
+		data-title="Source: <a href='https://dhtmlx.com/' target='_blank'>click hear</a>"></a>
+		<a href="images/jax/4.jpg" data-lightbox="jax-gallery"
+		data-title="Source: <a href='https://www.alamy.com/stock-photo-passenger-help-point-and-travel-information-screen-at-aldermaston-57743233.html' target='_blank'>click hear</a>"></a>
+		<a href="images/jax/5.jpg" data-lightbox="jax-gallery"
+		data-title="Source: <a href='https://jeatech.com.au/Transport-and-Parking~1698' target='_blank'>click hear</a>"></a>
+		<a href="images/jax/6.png" data-lightbox="jax-gallery"
+		data-title="Source: <a href='https://transit.land/documentation/datastore/schedules.html' target='_blank'>click hear</a>"></a>
+	</div>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -444,6 +621,9 @@
 	<script src="js/scrollreveal.min.js"></script>
 	<script src="js/scrollreveal_custom.js"></script>
 
+	<!-- magnify js -->
+	<script src="js/lightbox.min.js"></script>
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
@@ -455,6 +635,12 @@
 				largeur:10,
 				hauteur:10
 			});
+
+			lightbox.option({
+				'resizeDuration': 200,
+				'wrapAround': true
+			})
+
 		});
 
 		function togglePanel(name) {
@@ -468,6 +654,10 @@
 			$('.fh5co-tab-content').removeClass('active');
 			$('#'+ id).addClass('bg-img animated fadeInUp active'); */
 			$('#'+ id).click();
+		}
+
+		function openImages(Id) {
+			$('#'+ Id).click();
 		}
 
 	</script>

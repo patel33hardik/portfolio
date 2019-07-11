@@ -1,3 +1,30 @@
+.img-crt {
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.80)), url('../doc/crt.jpg') center center no-repeat !important;
+    cursor: pointer;
+}
+
+.img-web {
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.80)), url('../doc/web2013.jpg') center center no-repeat !important;
+    cursor: pointer;
+}
+
+.img-utility {
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.80)), url('../images/utility/1.jpg') center center no-repeat !important;
+    cursor: pointer;
+}
+
+.timeline-img-header:hover,
+.timeline-img-jax:hover,
+.img-crt:hover,
+.img-web:hover,
+.img-utility:hover,
+.shadow-hover:hover {
+    box-shadow: 0px 0px 30px #17e7a4;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
 
 .timeline {
     position: relative;
@@ -15,11 +42,10 @@
 
 .timeline-item {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
 }
 .timeline-item:nth-child(even) .timeline-content {
     float: right;
-    padding: 40px 30px 10px 30px;
 }
 .timeline-item:nth-child(even) .timeline-content .date {
     right: auto;
@@ -47,9 +73,9 @@
 .timeline-content {
     position: relative;
     width: 45%;
-    padding: 10px 30px;
+    padding: 50px 0 0 10px;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(79, 79, 79, 0.49);
     box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
 .timeline-content::after {
@@ -61,7 +87,7 @@
     top: 30px;
     right: -15px;
     border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #f5f5f5;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);;
 }
 
 .timeline-img {
@@ -75,18 +101,16 @@
     margin-left: -15px;
 }
 
-a {
-    color: #ffffff;
+.timeline-btn {
+    color: #17e7a4;
     padding: 8px 20px;
-    text-transform: uppercase;
     font-size: 14px;
-    margin-bottom: 20px;
-    margin-top: 10px;
     display: inline-block;
     border-radius: 2px;
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
-a:hover, a:active, a:focus {
+.timeline-btn:hover, .timeline-btn:active, .timeline-btn:focus {
     color: #ffffff;
     text-decoration: none;
 }
@@ -104,14 +128,20 @@ a:hover, a:active, a:focus {
 }
 
 .timeline-item .timeline-img-header {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/edairy/1.jpg') center center no-repeat;
     background-size: cover;
+    cursor: pointer;
+}
+
+.timeline-item .timeline-img-jax {
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/jax/1.jpg') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 
 .timeline-img-header {
-    height: 200px;
+    height: 150px;
     position: relative;
-    margin-bottom: 20px;
 }
 
 .timeline-img-header h2 {
@@ -122,7 +152,7 @@ a:hover, a:active, a:focus {
 }
 
 .date {
-    background: #ff4081;
+    background: rgba(23, 231, 164, 0.4);
     display: inline-block;
     color: #ffffff;
     padding: 10px;
