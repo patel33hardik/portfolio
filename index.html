@@ -647,6 +647,9 @@
 	<!-- magnify js -->
 	<script src="js/lightbox.min.js"></script>
 
+	<!--EmailJS (https://www.emailjs.com/) send emails on page visit -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
@@ -662,7 +665,25 @@
 			lightbox.option({
 				'resizeDuration': 200,
 				'wrapAround': true
-			})
+			});
+
+			emailjs.init('tiB70L3WzGYJZdnWl');
+			let now = new Date();
+
+			// Define the email parameters
+			var templateParams = {
+				to_email: 'patel33hardik@gmail.com',
+				from_name: 'Hardik Patel',
+				message: `Hello, some one visited your site at ${now.toString()}.`
+			};
+
+			// Send the email using the email template ID
+			emailjs.send('service_36eotbt', 'template_wofl52o', templateParams)
+				.then(function(response) {
+				console.log('Email sent successfully!', response.status, response.text);
+				}, function(error) {
+				console.error('Email failed to send!', error);
+			});
 
 		});
 
