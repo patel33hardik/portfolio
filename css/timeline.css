@@ -134,10 +134,23 @@
 }
 
 .timeline-item .timeline-img-jax {
-    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/jax/1.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/jax/jax0.png') center center no-repeat;
     background-size: cover;
     cursor: pointer;
 }
+
+.timeline-item .timeline-img-gtfs {
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/gtfs/1.jpg') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.timeline-item .timeline-img-jas {
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/jas/jas1.png') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
 
 .timeline-img-header {
     height: 150px;
