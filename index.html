@@ -112,6 +112,16 @@
 						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
+				<li class="d-none">
+					<a href="#" id="jax_gtfs_tab" data-tab="11">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="jax_jas_tab" data-tab="12">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
 			</ul>
 			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -423,16 +433,44 @@
 								<section class="timeline">
 									<div class="container p-0">
 										<div class="timeline-item">
-											<div class="timeline-img">
+											<div class="timeline-img"></div>
+											<div class="timeline-content timeline-card js--fadeInLeft">
+												<div class="timeline-img-header timeline-img-jas" onclick="openImages('jax_jas_img');">
+													<h2>JAS</h2>
+												</div>
+												<div class="date">2018-current</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_jas_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Jacques Announcement Scheduler (JAS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
 											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
 											<div class="timeline-content timeline-card js--fadeInRight">
-												<div class="timeline-img-header timeline-img-jax" onclick="openImages('jax_img');">
-													<h2>JELinux & GTFS</h2>
+												<div class="timeline-img-header timeline-img-gtfs" onclick="openImages('jax_gtfs_img');">
+													<h2>GTFS</h2>
 												</div>
 												<div class="date">2018-2019</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_gtfs_tab');"
+													style="cursor: pointer; font-size: 14px">
+													The General Transit Feed Specification (GTFS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img">
+											</div>
+											<div class="timeline-content timeline-card js--fadeInLeft">
+												<div class="timeline-img-header timeline-img-jax" onclick="openImages('jax_img');">
+													<h2>JELinux</h2>
+												</div>
+												<div class="date">2018-current</div>
 												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_detail_tab');"
 													style="cursor: pointer; font-size: 14px">
-													Web application configured with linux
+													Web applications and device configuration portal
 													<span style="color: #17e7a4;">read more...</span>
 												</p>
 											</div>
@@ -464,7 +502,7 @@
 										</div>
 										<div class="timeline-item">
 											<div class="timeline-img"></div>
-											<div class="img-crt timeline-content js--fadeInLeft" onclick="openImages('crt_img')">
+											<div class="img-crt timeline-content js--fadeInRight" onclick="openImages('crt_img')">
 												<h4 class="mb-1">Certificate Design</h4>
 												<div class="date">2013</div>
 												<p class="p-1 m-0" style="font-size: 14px">Designed certificate of a national workshop
@@ -532,31 +570,54 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text detail">
+									<h2>2018-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>JELinux Web Interface</h3>
+										<ul>
+											<li>
+												The Jacques IP Communications System runs on the JELinux operating system. To access the Jacques system server, users can use the JELinux Webcfg application, which has been updated to version 8. The JELinux Web Interface is a centralized platform that allows users to configure software packages, system settings, and device features on the Jacques system server. The latest version of the interface, version 8, offers improved security, a better user experience, and more flexible feature configuration. A team of four members is currently working on this project to ensure that the web interface is seamless and efficient for managing the Jacques system.
+											</li>
+										</ul>
+										<h3>REQUIREMENTS</h3>
+										<ul>
+											<li>Web browser (preferably Mozilla Firefox or Google Chrome)</li>
+											<li>Network access & connectivity to the server</li>
+											<li>A network route to the IP address of the server to be accessed</li>
+										</ul>
+										<h3>Webcfg Application Facilitates the Following:</h3>
+										<ul>
+											<li>Configuration of the system controller (server)</li>
+											<li>Configuration of installed software applications and packages installed on the server</li>
+											<li>Provides a detailed history of configuration changes via the log</li>
+											<li>Access to the MySQL database</li>
+											<li>A dashboard that provides the server statistics</li>
+										</ul>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="11">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
 									<h2>2018-2019</h2>
 									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
 									<div class="edu">
-										<h3>JELinux web interface</h3>
+										<h3>General Transit Feed Specification (GTFS)</h3>
 										<ul>
 											<li>
-												The Jacques IP Communications System runs on JELinux, its operating system. Through the JELinux web interface, users have the ability to configure software packages, system settings, and device features on the Jacques system server. Version 8 has significant improvements to security, user experience, and feature configuration. The JELinux server comprises numerous packages, including the following application packages.
-											</li>
-										</ul>
-										<h3>MNS (Mass notification System)</h3>
-										<ul>
-											<li>
-												The Jacques MNS app makes sending mass text notifications to contacts easy based on events in the Jacques system. These notifications are distributed through APIs or Hardware using AT commands to MNS distribution providers online.
-											</li>
-										</ul>
-										<h3>URP (User Roles and Permissions)</h3>
-										<ul>
-											<li>
-												The "Roles and Permissions" application ensures secure and password-protected access to JELinux server applications. Users can be classified as administrators with full access or system users with limited access, based on their defined roles.
-											</li>
-										</ul>
-										<h3>JAS (Jacques Announcement Scheduler)</h3>
-										<ul>
-											<li>
-												Introducing JAS - the ultimate scheduling interface for Jacques systems. With JAS, you can effortlessly upload audio files and create a seamless broadcasting timetable across multiple zones. Developed using cutting-edge technologies including Python, Flask, jQuery, React, Ajax, Bootstrap, and CSS3, JAS is fully optimized for mobile use. Get ready to take your broadcasting game to the next level with JAS.
+												The General Transit Feed Specification (GTFS) is a data format used for public transportation schedules and geographic information. It's a standardized format that allows transit agencies to provide data about their routes, stops, trips, and schedules in a consistent and structured way. GTFS data is commonly used by applications to provide accurate and up-to-date information to users about public transportation options. GTFS data typically consists of several CSV (Comma-Separated Values) files that describe different aspects of the transit system:
 											</li>
 										</ul>
 										<h3>4Trak NSW train (gtfs train schedule system)</h3>
@@ -574,6 +635,57 @@
 										</ul>
 										<p class="mb-2"> <small> Note: Due to privacy reason, project snapshots are not disclosed. All images are source from internet which shows similar work.</small>
 										</p>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="12">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2018-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>Jacques Announcement Scheduler (JAS)</h3>
+										<ul>
+											<li>
+												Meet JAS, the ultimate solution for all your public address and bell scheduling needs. With its user-friendly interface, JAS makes it incredibly easy to upload and broadcast audio files through the Jacques IP Communications System. Version 8 comes equipped with QButtons, enabling you to make immediate announcements. You can also customize scheduling options for specific times and zones, making it easier to manage schedules through the calendar. Plus, JAS generates reports to help you keep track of everything. If you're looking for hassle-free scheduling. The development process involved using PHP, which was then converted to Python, Flask, Mysql and Sqlite3, jQuery, and other frontend technologies.
+											</li>
+										</ul>
+										<h3>JAS application facilitates the following:</h3>
+										<ul>
+											<li>
+												<strong>Audio features include:</strong> uploading audio files and creating and editing announcements.
+											</li>
+											<li>
+												<strong>The text-to-speech feature:</strong> allows users to create audio by entering the desired text in the message box provided.
+											</li>
+											<li>
+												<strong>Record audio:</strong> allows users to record announcements for broadcast.
+											</li>
+											<li>
+												<strong>Immediate announcements using Qbuttons.</strong>
+											</li>
+											<li>
+												<strong>Allow scheduling the audio page using the scheduler:</strong> the calendar is where schedules are assigned to dates.
+											</li>
+											<li>
+												<strong>Provides a detailed history of configuration changes with users via the log.</strong>
+											</li>
+											<li>
+												<strong>Provide a detailed report of schedules that include events.</strong>
+											</li>
+										</ul>
 										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
 											Back..</span>
 									</div>
@@ -625,16 +737,28 @@
 		<a href="images/utility/8.JPG" data-lightbox="utility-gallery"></a>
 	</div>
 	<div class="jax-gallery d-none">
-		<a id='jax_img' href="images/jax/2.jpg" data-lightbox="jax-gallery"
+		<a id='jax_img' href="images/jax/jax0.png" data-lightbox="jax-gallery"></a>
+		<a href="images/jax/jax1.png" data-lightbox="jax-gallery"></a>
+		<a href="images/jax/jax2.png" data-lightbox="jax-gallery"></a>
+	</div>
+	<div class="gtfs-gallery d-none">
+		<a id='jax_gtfs_img' href="images/gtfs/1.jpg" data-lightbox="gtfs-gallery"></a>
+		<a href="images/gtfs/2.jpg" data-lightbox="gtfs-gallery"
 		data-title="Source: <a href='https://blinktag.com/tag/transit/' target='_blank'>click hear</a>"></a>
-		<a href="images/jax/3.png" data-lightbox="jax-gallery"
+		<a href="images/gtfs/3.png" data-lightbox="gtfs-gallery"
 		data-title="Source: <a href='https://dhtmlx.com/' target='_blank'>click hear</a>"></a>
-		<a href="images/jax/4.jpg" data-lightbox="jax-gallery"
+		<a href="images/gtfs/4.jpg" data-lightbox="gtfs-gallery"
 		data-title="Source: <a href='https://www.alamy.com/stock-photo-passenger-help-point-and-travel-information-screen-at-aldermaston-57743233.html' target='_blank'>click hear</a>"></a>
-		<a href="images/jax/5.jpg" data-lightbox="jax-gallery"
+		<a href="images/gtfs/5.jpg" data-lightbox="gtfs-gallery"
 		data-title="Source: <a href='https://jeatech.com.au/Transport-and-Parking~1698' target='_blank'>click hear</a>"></a>
-		<a href="images/jax/6.png" data-lightbox="jax-gallery"
+		<a href="images/gtfs/6.png" data-lightbox="gtfs-gallery"
 		data-title="Source: <a href='https://transit.land/documentation/datastore/schedules.html' target='_blank'>click hear</a>"></a>
+	</div>
+	<div class="jas-gallery d-none">
+		<a id='jax_jas_img' href="images/jas/jas1.png" data-lightbox="jas-gallery"></a>
+		<a href="images/jas/jas2.png" data-lightbox="jas-gallery"></a>
+		<a href="images/jas/jas3.png" data-lightbox="jas-gallery"></a>
+		<a href="images/jas/jas4.png" data-lightbox="jas-gallery"></a>
 	</div>
 
 	<!-- jQuery -->
@@ -724,9 +848,6 @@
 		}
 
 		function changeTab(id) {
-			/* var tab_name = $('.fh5co-tab-content').attr('data-content');
-			$('.fh5co-tab-content').removeClass('active');
-			$('#'+ id).addClass('bg-img animated fadeInUp active'); */
 			$('#'+ id).click();
 		}
 
