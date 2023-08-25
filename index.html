@@ -122,6 +122,11 @@
 						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
+				<li class="d-none">
+					<a href="#" id="jax_irs_tab" data-tab="13">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
 			</ul>
 			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -434,6 +439,20 @@
 									<div class="container p-0">
 										<div class="timeline-item">
 											<div class="timeline-img"></div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header timeline-img-irs" onclick="openImages('jax_irs_img');">
+													<h2>IRS</h2>
+												</div>
+												<div class="date">2018-current</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_irs_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Jacques Intercom Report Server (IRS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
 											<div class="timeline-content timeline-card js--fadeInLeft">
 												<div class="timeline-img-header timeline-img-jas" onclick="openImages('jax_jas_img');">
 													<h2>JAS</h2>
@@ -695,6 +714,45 @@
 					</div>
 				</div>
 			</div>
+			<div class="fh5co-tab-content bg-img" data-content="13">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2018-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>IRS (Jacques Intercom Report Server)</h3>
+										<p>
+											IRS is a reporting software module designed to provide detailed and accurate reporting of live system activities for Jacques IP Communication Systems. It generates reports on system operation, fault events, and call activity, aiding in fault diagnosis, network management, and system maintenance. IRS is a modular software that can be deployed on-premises or in the cloud. It is compatible with a wide range of Jacques IP Communication Systems and can be customized to meet the specific needs of each organization. The IRS software package is installed on the JElinux system and is built using MySql, Python Flask, jQuery, Ajax, and frontend technologies.
+										</p>
+										<p>
+											IRS application facilitates the following:
+										</p>
+										<ul>
+											<li>Self-Diagnostic Report (manual and scheduled) used to test self-test button intercom devices site-wide</li>
+											<li>A live events page that displays all events that occur on the system, which can be filtered using standard or custom filters</li>
+											<li>A calendar to schedule reports to be generated, including automatic archive and mailing of reports</li>
+											<li>Report archive</li>
+											<li>Ability to add notes to reports</li>
+											<li>Ability to tag reports so they cannot be deleted</li>
+											<li>Custom branding on reports</li>
+											<li>Access to features on a per-user basis</li>
+										</ul>
+
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer id="fh5co-footer">
 			<div class="row">
@@ -759,6 +817,11 @@
 		<a href="images/jas/jas2.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas3.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas4.png" data-lightbox="jas-gallery"></a>
+	</div>
+	<div class="irs-gallery d-none">
+		<a id='jax_irs_img' href="images/irs/irs1.png" data-lightbox="irs-gallery"></a>
+		<a href="images/irs/irs2.png" data-lightbox="irs-gallery"></a>
+		<a href="images/irs/irs3.png" data-lightbox="irs-gallery"></a>
 	</div>
 
 	<!-- jQuery -->

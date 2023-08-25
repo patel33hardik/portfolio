@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -167,10 +167,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 .fh5co-tab-wrap .fh5co-tab-menu li a .icon {
   display: block;
@@ -306,11 +302,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 }
+
 .fh5co-counter .fh5co-text h3 {
   margin: 0;
   padding: 0;
   position: relative;
 }
+
 .fh5co-counter .fh5co-text h3.border-bottom:after {
   content: "";
   width: 50px;
@@ -321,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   text-align: center;
 }
+
 .fh5co-social li {
   padding: 0;
   margin: 0;
@@ -328,8 +327,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
+
 .fh5co-social li a {
   font-size: 22px;
   color: #fff;
@@ -337,20 +336,18 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  border-radius: 7px;
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-social li a {
     padding: 10px 8px;
   }
 }
+
 .fh5co-social li a:hover {
   color: #17e7a4;
 }
+
 .fh5co-social li a:hover, .fh5co-social li a:active, .fh5co-social li a:focus {
   outline: none;
   text-decoration: none;
@@ -454,7 +451,6 @@ h1, h2, h3, h4, h5, h6 {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
   }
 }
 
