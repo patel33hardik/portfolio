@@ -122,6 +122,16 @@
 						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
+				<li class="d-none">
+					<a href="#" id="jax_irs_tab" data-tab="13">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
+				<li class="d-none">
+					<a href="#" id="jax_mns_tab" data-tab="14">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
 			</ul>
 			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -434,6 +444,34 @@
 									<div class="container p-0">
 										<div class="timeline-item">
 											<div class="timeline-img"></div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header timeline-img-mns" onclick="openImages('jax_mns_img');">
+													<h2>MNS</h2>
+												</div>
+												<div class="date">2020-current</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_mns_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Jacques Mass Notification System (MNS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header timeline-img-irs" onclick="openImages('jax_irs_img');">
+													<h2>IRS</h2>
+												</div>
+												<div class="date">2018-current</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_irs_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Jacques Intercom Report Server (IRS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
 											<div class="timeline-content timeline-card js--fadeInLeft">
 												<div class="timeline-img-header timeline-img-jas" onclick="openImages('jax_jas_img');">
 													<h2>JAS</h2>
@@ -695,6 +733,100 @@
 					</div>
 				</div>
 			</div>
+			<div class="fh5co-tab-content bg-img" data-content="13">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2018-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>IRS (Jacques Intercom Report Server)</h3>
+										<p>
+											IRS is a reporting software module designed to provide detailed and accurate reporting of live system activities for Jacques IP Communication Systems. It generates reports on system operation, fault events, and call activity, aiding in fault diagnosis, network management, and system maintenance. IRS is a modular software that can be deployed on-premises or in the cloud. It is compatible with a wide range of Jacques IP Communication Systems and can be customized to meet the specific needs of each organization. The IRS software package is installed on the JElinux system and is built using MySql, Python Flask, jQuery, Ajax, and frontend technologies.
+										</p>
+										<p>
+											IRS application facilitates the following:
+										</p>
+										<ul>
+											<li>Self-Diagnostic Report (manual and scheduled) used to test self-test button intercom devices site-wide</li>
+											<li>A live events page that displays all events that occur on the system, which can be filtered using standard or custom filters</li>
+											<li>A calendar to schedule reports to be generated, including automatic archive and mailing of reports</li>
+											<li>Report archive</li>
+											<li>Ability to add notes to reports</li>
+											<li>Ability to tag reports so they cannot be deleted</li>
+											<li>Custom branding on reports</li>
+											<li>Access to features on a per-user basis</li>
+										</ul>
+
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content bg-img" data-content="14">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2020-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>Mass Notification System (MNS)</h3>
+										<p>
+											Our Mass Notification System (MNS) is a vital component in our infrastructure, simplifying mass text notifications. The MNS integrates hardware and software for efficient communication. It leverages a combination of APIs and AT commands for message delivery through various MNS providers. The MNS is versatile and uses GSM-based hardware and SMS APIs for emergency broadcast. A browser-based Web Push notification service enhances user experience. We are continuously improving the MNS by integrating Telegram services and Socket.io-based applications. The Jelinux system has MNS software installed with separate package, which is built using Sqlite, pywebpush, Python Flask, jQuery, and frontend technologies.
+										</p>
+										<p>
+											MNS application facilitates the following:
+										</p>
+										<ul>
+											<li>
+												Easy sending of mass text notifications to contacts.
+											</li>
+											<li>
+												Seamless integration of hardware and software within the Jacques platform.
+											</li>
+											<li>
+												Utilization of APIs and AT commands for message distribution through various MNS distribution providers.
+											</li>
+											<li>
+												Capability to send messages through both hardware and API-based configurations.
+											</li>
+											<li>
+												Deployment of GSM-based hardware on the JEM4 device for efficient message transmission.
+											</li>
+											<li>
+												Integration of various SMS APIs for emergency broadcast messaging.
+											</li>
+											<li>
+												Configuration of a browser-based Web Push notification service for real-time message reception via service workers.
+											</li>
+											<li>
+												Ongoing efforts to expand capabilities by integrating Telegram services and Socket.io-based applications for enhanced message broadcasting.
+											</li>
+										</ul>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer id="fh5co-footer">
 			<div class="row">
@@ -759,6 +891,17 @@
 		<a href="images/jas/jas2.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas3.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas4.png" data-lightbox="jas-gallery"></a>
+		<a href="images/jas/jas5.png" data-lightbox="jas-gallery"></a>
+	</div>
+	<div class="irs-gallery d-none">
+		<a id='jax_irs_img' href="images/irs/irs1.png" data-lightbox="irs-gallery"></a>
+		<a href="images/irs/irs2.png" data-lightbox="irs-gallery"></a>
+		<a href="images/irs/irs3.png" data-lightbox="irs-gallery"></a>
+	</div>
+	<div class="mns-gallery d-none">
+		<a id='jax_mns_img' href="images/mns/mns1.png" data-lightbox="mns-gallery"></a>
+		<a href="images/mns/mns2.png" data-lightbox="mns-gallery"></a>
+		<a href="images/mns/mns3.png" data-lightbox="mns-gallery"></a>
 	</div>
 
 	<!-- jQuery -->
