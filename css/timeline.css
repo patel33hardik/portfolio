@@ -157,6 +157,12 @@
     cursor: pointer;
 }
 
+.timeline-item .timeline-img-mns {
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.53)), url('../images/mns/mns.jpg') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
 .timeline-img-header {
     height: 150px;
     position: relative;

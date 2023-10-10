@@ -127,6 +127,11 @@
 						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
 					</a>
 				</li>
+				<li class="d-none">
+					<a href="#" id="jax_mns_tab" data-tab="14">
+						<span class="icon icon-black-tie"></span><span class="menu-text"></span>
+					</a>
+				</li>
 			</ul>
 			<div class="fh5co-tab-content bg-img active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -437,6 +442,20 @@
 							<div class="fh5co-feature">
 								<section class="timeline">
 									<div class="container p-0">
+										<div class="timeline-item">
+											<div class="timeline-img"></div>
+											<div class="timeline-content timeline-card js--fadeInRight">
+												<div class="timeline-img-header timeline-img-mns" onclick="openImages('jax_mns_img');">
+													<h2>MNS</h2>
+												</div>
+												<div class="date">2020-current</div>
+												<p class="p-2 m-0 shadow-hover" onclick="changeTab('jax_mns_tab');"
+													style="cursor: pointer; font-size: 14px">
+													Jacques Mass Notification System (MNS)
+													<span style="color: #17e7a4;">read more...</span>
+												</p>
+											</div>
+										</div>
 										<div class="timeline-item">
 											<div class="timeline-img"></div>
 											<div class="timeline-content timeline-card js--fadeInRight">
@@ -753,6 +772,61 @@
 					</div>
 				</div>
 			</div>
+			<div class="fh5co-tab-content bg-img" data-content="14">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-feature">
+								<div class="fh5co-icon detail">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text detail">
+									<h2>2020-current</h2>
+									<h3><a href="https://www.jacques.com.au/" target="_blank">Jacques Technology Pvt. Ltd.</a></h3>
+									<div class="edu">
+										<h3>Mass Notification System (MNS)</h3>
+										<p>
+											Our Mass Notification System (MNS) is a vital component in our infrastructure, simplifying mass text notifications. The MNS integrates hardware and software for efficient communication. It leverages a combination of APIs and AT commands for message delivery through various MNS providers. The MNS is versatile and uses GSM-based hardware and SMS APIs for emergency broadcast. A browser-based Web Push notification service enhances user experience. We are continuously improving the MNS by integrating Telegram services and Socket.io-based applications. The Jelinux system has MNS software installed with separate package, which is built using Sqlite, pywebpush, Python Flask, jQuery, and frontend technologies.
+										</p>
+										<p>
+											MNS application facilitates the following:
+										</p>
+										<ul>
+											<li>
+												Easy sending of mass text notifications to contacts.
+											</li>
+											<li>
+												Seamless integration of hardware and software within the Jacques platform.
+											</li>
+											<li>
+												Utilization of APIs and AT commands for message distribution through various MNS distribution providers.
+											</li>
+											<li>
+												Capability to send messages through both hardware and API-based configurations.
+											</li>
+											<li>
+												Deployment of GSM-based hardware on the JEM4 device for efficient message transmission.
+											</li>
+											<li>
+												Integration of various SMS APIs for emergency broadcast messaging.
+											</li>
+											<li>
+												Configuration of a browser-based Web Push notification service for real-time message reception via service workers.
+											</li>
+											<li>
+												Ongoing efforts to expand capabilities by integrating Telegram services and Socket.io-based applications for enhanced message broadcasting.
+											</li>
+										</ul>
+										<span onclick="changeTab('project_tab');" style="color: #17e7a4; cursor: pointer;">
+											Back..
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer id="fh5co-footer">
 			<div class="row">
@@ -817,11 +891,17 @@
 		<a href="images/jas/jas2.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas3.png" data-lightbox="jas-gallery"></a>
 		<a href="images/jas/jas4.png" data-lightbox="jas-gallery"></a>
+		<a href="images/jas/jas5.png" data-lightbox="jas-gallery"></a>
 	</div>
 	<div class="irs-gallery d-none">
 		<a id='jax_irs_img' href="images/irs/irs1.png" data-lightbox="irs-gallery"></a>
 		<a href="images/irs/irs2.png" data-lightbox="irs-gallery"></a>
 		<a href="images/irs/irs3.png" data-lightbox="irs-gallery"></a>
+	</div>
+	<div class="mns-gallery d-none">
+		<a id='jax_mns_img' href="images/mns/mns1.png" data-lightbox="mns-gallery"></a>
+		<a href="images/mns/mns2.png" data-lightbox="mns-gallery"></a>
+		<a href="images/mns/mns3.png" data-lightbox="mns-gallery"></a>
 	</div>
 
 	<!-- jQuery -->
